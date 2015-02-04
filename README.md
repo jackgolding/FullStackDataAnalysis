@@ -3,6 +3,10 @@ Presentation: Full Stack Data Analysis With Python, February 2015 for Perth Data
 
 **Author**: Jack Golding, reachable at *jackgolding@live.com.au*
 
+View these notebooks at:
+
+http://nbviewer.ipython.org/github/jackgolding/FullStackDataAnalysis/tree/master/
+
 **Steps**
 
 1. Clone this repo using `git clone https://github.com/jackgolding/FullStackDataAnalysis.git` or by simply downloading the files however you seem fit.
