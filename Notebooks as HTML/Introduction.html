@@ -1681,21 +1681,8 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="full-stack-data-analysis-with-python">Full-Stack Data Analysis with Python</h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>What I hope you will get out of this talk</strong></p>
-<ol style="list-style-type: decimal">
-<li>An appreciation for Python as a language and a tool for data analysis</li>
-<li>The knowledge of how to set up Python on your own machine using Anaconda</li>
-<li>An idea of what a data application workflow in Python looks like</li>
-<li>Confidence that your next work project can be done in Python</li>
-</ol>
+<p>Notebooks avaliable online at: https://github.com/jackgolding/FullStackDataAnalysis</p>
+<p>Viewable at: http://nbviewer.ipython.org/github/jackgolding/FullStackDataAnalysis/tree/master/</p>
 </div>
 </div>
 </div>
@@ -1707,8 +1694,10 @@ div#notebook {
 <h2 id="schedule">Schedule</h2>
 <ul>
 <li>Introduction</li>
+<li>Who Am I</li>
 <li>What I hope you'll get out of this talk</li>
 <li>What is Python</li>
+<li>Other languages</li>
 <li>Installation</li>
 <li>Virtual Environments</li>
 <li><p>CRISP-DM</p></li>
@@ -1718,6 +1707,40 @@ div#notebook {
 <li>Machine Learning</li>
 <li><p>Application Development with Flask</p></li>
 </ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="who-am-i">Who Am I</h2>
+<ul>
+<li>Jack Golding</li>
+<li>Data Engineer at a national utility</li>
+<li>Ex Market Research Consultant (lots of surveys)</li>
+<li>Bachelor's in Computer Science and Math from UWA, did a bit at ANU</li>
+<li>Currently doing Certificate in Data Science online</li>
+<li>Didn't code before Uni</li>
+<li>Programmed in Java &gt; C &gt; R &gt; Matlab/Mathematica &gt; Ada &gt; Python</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="what-i-hope-you-will-get-out-of-this-talk">What I hope you will get out of this talk</h2>
+<ol style="list-style-type: decimal">
+<li>An appreciation for Python as a language and a tool for data analysis</li>
+<li>The knowledge of how to set up Python on your own machine using Anaconda</li>
+<li>An idea of what a data application workflow in Python looks like</li>
+<li>Confidence that your next project can be done in Python</li>
+</ol>
+<h3 id="discussion-is-very-much-open-if-you-do-not-understand-something-please-yell-out">Discussion is very much open, if you do not understand something please yell out!</h3>
 </div>
 </div>
 </div>
@@ -1744,12 +1767,27 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="other-languages">Other languages</h2>
+<p><em>Given that Revolution Analytics just got bought by Microsoft I think its appropriate to discuss Python vs R</em></p>
+<p><strong>Python</strong> - Python is a programming language and is thus similar to other programming languages (R is known to be unintuitive to those who know other languages) - Code is much more production ready than R - this is especially good if you have Python web developers - With Machine Learning, Python is more focused in predictive accuracy (e.g. cross validation) - There are a lot more things to think about when creating a model in Python such as data structures - It is A LOT easier to swap between models in sk-learn than in R once you get a hang of it, where swapping models can mean swapping libraries (R's caret <em>(Classification And REgression Training)</em> is an answer to this) - Data manipulation is a lot easier in Python - regular expressions are easier than R and Python has more data structures - Natural Language Processing is a lot easier in Python thanks to NLTK</p>
+<p><strong>Why R</strong> - R is MUCH more focused on data analysis - Bleeding edge packages are generally easier to find in R - Used much more widely in academia - With Machine Learning, R is much more focused on statistical learning (i.e. easier to access and run diagnostics on models) - Creating your first model is a lot easier in R - Installing R and RStudio is A LOT easier than Python - dplyr is said to be easier than Pandas (I'm not sure of this) - ggplot is MILES ahead of matplotlib and other Python libraries</p>
+<p><strong>Why Neither</strong> - Ther is a <em>lot</em> to learn to master both R and Python - Can cause bottlenecks in organisations if only one person knows - Can end up as just another tool that only one person uses - i.e. Lisp - Limited Support and Talent especially in Perth - Not as much support as vendors (especially regarding integration) but debatably better documentation</p>
+<p><strong>Other languages like R and Python worth mentioning</strong> - Scala - Julia</p>
+<p>Credit to http://www.dataschool.io/python-or-r-for-data-science/</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="installing-python">Installing Python</h2>
 <p><strong>Python 2 or 3?</strong></p>
 <ul>
 <li>Unless you KNOW RIGHT NOW that you will use a package that is only avaliable in 2.X, use 3</li>
 </ul>
-<p><strong>Is a pain in the butt for a few reasons:</strong></p>
+<p><strong>Installing Python is a pain in the butt for a few reasons:</strong></p>
 <ul>
 <li>Some libraries are compiled, Windows hates these</li>
 <li>There are some best practices that not every tutorial will tell you, if you don't follow them life can become miserable</li>
@@ -4989,12 +5027,16 @@ WpsAAAAASUVORK5CYII=
 <li>Initial briefing, requirements</li>
 <li>Book meetings with stakeholders</li>
 <li>Try to independantly understand data and business rules</li>
+<li>Pandas</li>
 <li>Discuss data with stakeholders</li>
-<li>Perform Exploratory Data Analysis</li>
+<li>Perform Data Cleaning and Exploratory Data Analysis</li>
+<li>Pandas</li>
 <li>Build Model</li>
+<li>sklearn, scipy</li>
 <li>Evaluate model against requirements</li>
 <li>Evaluate robustness of solution</li>
 <li>Deploy solution</li>
+<li>Flask, Luigi, IPython Notebook,</li>
 <li>Project evaluation</li>
 </ul>
 </div>

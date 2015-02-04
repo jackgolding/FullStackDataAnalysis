@@ -1688,7 +1688,7 @@ div#notebook {
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[115]:
+In&nbsp;[2]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -1705,7 +1705,7 @@ In&nbsp;[115]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[116]:
+In&nbsp;[3]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -1720,11 +1720,11 @@ In&nbsp;[116]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[117]:
+In&nbsp;[7]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">test</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">train</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -1736,7 +1736,7 @@ In&nbsp;[117]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[117]:</div>
+    Out[7]:</div>
 
 <div class="output_html rendered_html output_subarea output_pyout">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -1744,11 +1744,17 @@ In&nbsp;[117]:
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
       <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
       <th>Age</th>
       <th>SibSp</th>
       <th>Parch</th>
+      <th>Ticket</th>
       <th>Fare</th>
+      <th>Cabin</th>
       <th>Embarked</th>
       <th>Gender</th>
     </tr>
@@ -1756,53 +1762,83 @@ In&nbsp;[117]:
   <tbody>
     <tr>
       <th>0</th>
-      <td> 3</td>
-      <td> 34.5</td>
-      <td> 0</td>
-      <td> 0</td>
-      <td>  7.8292</td>
       <td> 1</td>
+      <td> 0</td>
+      <td> 3</td>
+      <td>                           Braund, Mr. Owen Harris</td>
+      <td>   male</td>
+      <td> 22</td>
+      <td> 1</td>
+      <td> 0</td>
+      <td>        A/5 21171</td>
+      <td>  7.2500</td>
+      <td>  NaN</td>
+      <td> S</td>
       <td> 1</td>
     </tr>
     <tr>
       <th>1</th>
-      <td> 3</td>
-      <td> 47.0</td>
+      <td> 2</td>
+      <td> 1</td>
+      <td> 1</td>
+      <td> Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
+      <td> female</td>
+      <td> 38</td>
       <td> 1</td>
       <td> 0</td>
-      <td>  7.0000</td>
-      <td> 2</td>
+      <td>         PC 17599</td>
+      <td> 71.2833</td>
+      <td>  C85</td>
+      <td> C</td>
       <td> 0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td> 2</td>
-      <td> 62.0</td>
+      <td> 3</td>
+      <td> 1</td>
+      <td> 3</td>
+      <td>                            Heikkinen, Miss. Laina</td>
+      <td> female</td>
+      <td> 26</td>
       <td> 0</td>
       <td> 0</td>
-      <td>  9.6875</td>
-      <td> 1</td>
-      <td> 1</td>
+      <td> STON/O2. 3101282</td>
+      <td>  7.9250</td>
+      <td>  NaN</td>
+      <td> S</td>
+      <td> 0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td> 3</td>
-      <td> 27.0</td>
-      <td> 0</td>
-      <td> 0</td>
-      <td>  8.6625</td>
-      <td> 2</td>
+      <td> 4</td>
       <td> 1</td>
+      <td> 1</td>
+      <td>      Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
+      <td> female</td>
+      <td> 35</td>
+      <td> 1</td>
+      <td> 0</td>
+      <td>           113803</td>
+      <td> 53.1000</td>
+      <td> C123</td>
+      <td> S</td>
+      <td> 0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td> 3</td>
-      <td> 22.0</td>
-      <td> 1</td>
-      <td> 1</td>
-      <td> 12.2875</td>
-      <td> 2</td>
+      <td> 5</td>
       <td> 0</td>
+      <td> 3</td>
+      <td>                          Allen, Mr. William Henry</td>
+      <td>   male</td>
+      <td> 35</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td>           373450</td>
+      <td>  8.0500</td>
+      <td>  NaN</td>
+      <td> S</td>
+      <td> 1</td>
     </tr>
   </tbody>
 </table>
@@ -1827,7 +1863,7 @@ In&nbsp;[117]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[118]:
+In&nbsp;[8]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -1851,7 +1887,7 @@ In&nbsp;[118]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[119]:
+In&nbsp;[9]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -1867,7 +1903,7 @@ In&nbsp;[119]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[119]:</div>
+    Out[9]:</div>
 
 
 <div class="output_text output_subarea output_pyout">
@@ -1896,7 +1932,7 @@ Name: Embarked, dtype: object
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[120]:
+In&nbsp;[10]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -1920,7 +1956,7 @@ In&nbsp;[120]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[121]:
+In&nbsp;[11]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -1944,7 +1980,7 @@ In&nbsp;[121]:
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 Ports =  [(0, &apos;C&apos;), (1, &apos;Q&apos;), (2, &apos;S&apos;)]
-Ports Dict =  {&apos;Q&apos;: 1, &apos;C&apos;: 0, &apos;S&apos;: 2}
+Ports Dict =  {&apos;C&apos;: 0, &apos;S&apos;: 2, &apos;Q&apos;: 1}
 0    2
 1    0
 2    2
@@ -1972,7 +2008,7 @@ Name: Embarked, dtype: int32
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[122]:
+In&nbsp;[12]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2012,7 +2048,7 @@ In&nbsp;[122]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[123]:
+In&nbsp;[13]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2036,7 +2072,7 @@ In&nbsp;[123]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[124]:
+In&nbsp;[14]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2051,7 +2087,7 @@ In&nbsp;[124]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[125]:
+In&nbsp;[15]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2067,7 +2103,7 @@ In&nbsp;[125]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[125]:</div>
+    Out[15]:</div>
 
 <div class="output_html rendered_html output_subarea output_pyout">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -2164,7 +2200,7 @@ In&nbsp;[125]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[91]:
+In&nbsp;[16]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2179,7 +2215,7 @@ In&nbsp;[91]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[92]:
+In&nbsp;[17]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2207,7 +2243,7 @@ In&nbsp;[92]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[93]:
+In&nbsp;[18]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2254,7 +2290,7 @@ In&nbsp;[93]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[94]:
+In&nbsp;[19]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2269,7 +2305,7 @@ In&nbsp;[94]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[95]:
+In&nbsp;[20]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2293,7 +2329,7 @@ In&nbsp;[95]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[96]:
+In&nbsp;[21]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2309,7 +2345,7 @@ In&nbsp;[96]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[97]:
+In&nbsp;[22]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2325,7 +2361,7 @@ In&nbsp;[97]:
 
 
 <div class="output_area"><div class="prompt output_prompt">
-    Out[97]:</div>
+    Out[22]:</div>
 
 <div class="output_html rendered_html output_subarea output_pyout">
 <div style="max-height:1000px;max-width:1500px;overflow:auto;">
@@ -2413,7 +2449,7 @@ In&nbsp;[97]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[126]:
+In&nbsp;[23]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2440,7 +2476,7 @@ In&nbsp;[126]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[127]:
+In&nbsp;[24]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2464,7 +2500,7 @@ In&nbsp;[127]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[128]:
+In&nbsp;[25]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2479,7 +2515,7 @@ In&nbsp;[128]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[129]:
+In&nbsp;[26]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2494,7 +2530,7 @@ In&nbsp;[129]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[130]:
+In&nbsp;[27]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2539,7 +2575,7 @@ In&nbsp;[130]:
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
-In&nbsp;[131]:
+In&nbsp;[28]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
@@ -2547,6 +2583,41 @@ In&nbsp;[131]:
 </pre></div>
 
 </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[30]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">sklearn.externals</span> <span class="kn">import</span> <span class="n">joblib</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">forest</span><span class="p">,</span> <span class="s">&#39;./Assets/my_model.pkl&#39;</span><span class="p">,</span> <span class="n">compress</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[30]:</div>
+
+
+<div class="output_text output_subarea output_pyout">
+<pre>
+[&apos;./Assets/my_model.pkl&apos;]
+</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
