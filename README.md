@@ -7,6 +7,10 @@ View these notebooks at:
 
 http://nbviewer.ipython.org/github/jackgolding/FullStackDataAnalysis/tree/master/
 
+Video of talk at:
+
+https://www.youtube.com/watch?v=N17XGVWAjv8
+
 **Steps**
 
 1. Clone this repo using `git clone https://github.com/jackgolding/FullStackDataAnalysis.git` or by simply downloading the files however you seem fit.
